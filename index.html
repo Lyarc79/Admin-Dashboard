@@ -1,97 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/967516047d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="search-container">
-                <input type="search">
+            <div class="top-container">
+                <div class="search-container">
+                    <img src="icons/magnify.svg">
+                    <input type="search" class="searchbar">
+                </div>
+                <div class="profile-container">
+                    <img src="icons/bell-badge.svg">
+                    <div class="logo-small"></div>
+                    <h3>Marc Celma</h3>
+                </div>
             </div>
-            <div class="profile-container">
-                <img>
-                <h3></h3>
+            <div class="bot-container">
+                <div class="info-container">
+                    <div class="logo-big"></div>
+                    <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">Marc Celma (@lyarc79)</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
-            <div class="info-container">
-                <img>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
+
         </div>
         <div class="sidebar">
             <div class="dashboard">
-                Dasboard
+                <img src="./icons/view-dashboard.svg">
+                <p>Dashboard</p>
             </div>
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>Events</li>
-                <li>Upload</li>
-                <li>Settings</li>
+                <li><img src="icons/home.svg">Home</li>
+                <li><img src="icons/account-outline.svg">Profile</li>
+                <li><img src="icons/email-outline.svg">Messages</li>
+                <li><img src="icons/clock-outline.svg">History</li>
+                <li><img src="icons/calendar-outline.svg">Events</li>
+                <li><img src="icons/cloud-upload-outline.svg">Upload</li>
             </ul>
+            <ul>
+                <li><img src="icons/cog-outline.svg">Settings</li>
+                <li><img src="icons/help-box.svg">Support</li>
+                <li><img src="icons/shield-check.svg">Privacy</li>
+            </ul>
+            <div class="github"><a href="https://github.com/Lyarc79" target="_blank">
+                    <i id="github-logo" class="fa-brands fa-github"></i></a></div>
         </div>
         <div class="main">
-            <div class="projects">
+            <div class="main-panel">
                 <h2>Your Projects</h2>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="project">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="projects">
+                    
+                    <div class="project">
+                        <p class="title">Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="title">Less Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="title">Impossible App</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="title">Easy Peasy App</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="title">Ad Blocker</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <p class="title">Money Maker</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="project-icons">
+                            <img src="icons/star-outline.svg" alt="star-icon">
+                            <img src="icons/eye-outline.svg" alt="visualize-icon">
+                            <img src="icons/share-variant-outline.svg" alt="share-icon">
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="right-panel">
                 <div class="announcements">
                     <h2>Announcements</h2>
                     <div class="announce-panel">
                         <div class="announce">
-                            <h3>aloha</h3>
-                            <p>Lorem impsum ammet alalalsld</p>
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare ante et risus
+                                dignissim, vel pellentesque libero susci...</p>
                         </div>
                         <div class="announce">
-                            <h3>aloha</h3>
-                            <p>Lorem impsum ammet alalalsld</p>
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare ante et risus
+                                dignissim, vel pellentesque libero susci...</p>
                         </div>
                         <div class="announce">
-                            <h3>aloha</h3>
-                            <p>Lorem impsum ammet alalalsld</p>
+                            <h3>Updated Privacy policy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare ante et risus
+                                dignissim, vel pellentesque libero susci...</p>
                         </div>
                     </div>
                 </div>
                 <div class="trending">
                     <h2>Trending</h2>
-                    <div class="trending-panel"></div>
+                    <div class="trending-panel">
+                        <div class="trend">
+                            <img src="imgs/trend01.jpeg" alt="gojo">
+                            <div class="trend-info">
+                                <p class="username">@gojo</p>
+                                <p class="name-text">World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="imgs/trend02.jpg" alt="megumi">
+                            <div class="trend-info">
+                                <p class="username">@megumi</p>
+                                <p class="name-text">Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="imgs/trend03.jpg" alt="kugisaki">
+                            <div class="trend-info">
+                                <p class="username">@kugisaki</p>
+                                <p class="name-text">Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="imgs/trend04.jpg" alt="nanami">
+                            <div class="trend-info">
+                                <p class="username">@nanami</p>
+                                <p class="name-text">No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </body>
+
 </html>
